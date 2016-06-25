@@ -94,5 +94,3 @@ ARG INSTALL_PRESTISSIMO=false
 RUN if [ "$INSTALL_PRESTISSIMO" = true ] ; then \
         composer global require "hirak/prestissimo:^0.3"; \
     fi
-
-CMD ['composer','install']
