@@ -12,6 +12,6 @@ ADD start.sh /
 RUN chmod +x /start.sh
 RUN apt-get update && apt-get install -y apache2-utils
 
-CMD ["start.sh"]
+CMD ["/start.sh"]
 
 EXPOSE 80 443
