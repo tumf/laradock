@@ -10,7 +10,7 @@ RUN echo "upstream php-upstream { server php-fpm:9000; }" > /etc/nginx/conf.d/up
 RUN usermod -u 1000 www-data
 ADD start.sh /
 RUN chmod +x /start.sh
-RUN apt-get update && apt-get install apache2-utils
+RUN apt-get update && apt-get install -f apache2-utils
 
 CMD ["start.sh"]
 
