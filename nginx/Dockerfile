@@ -8,7 +8,9 @@ ADD laravel.conf /etc/nginx/sites-available/
 RUN echo "upstream php-upstream { server php-fpm:9000; }" > /etc/nginx/conf.d/upstream.conf
 
 RUN usermod -u 1000 www-data
+ADD start.sh /
+RUN chmod +x /start.sh
 
-CMD ["nginx"]
+CMD ["start.sh"]
 
 EXPOSE 80 443
