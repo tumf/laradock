@@ -1,4 +1,4 @@
-FROM quay.io/tumf/laradock-workspace
+FROM tumf/laradock-workspace
 
 MAINTAINER Mahmoud Zalt <mahmoud@zalt.me>
 
